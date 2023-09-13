@@ -47,4 +47,34 @@ There are majorly two types of arrays:
 
 ## Advantages of using Arrays:
 - Arrays allow random access to elements. This makes accessing elements by position faster.
-- 
+- Arrays have better cache locality which makes a pretty big difference in performance.
+- Arrays represent multiple data items of the same type using a single name.
+- Arrays store multiple data of similar types with the same name.
+- Array data structure are used to implement the other data structures like linked lists, stacks, queues, trees, graphs, etc.
+
+## Disadvantages of Arrays:
+- As arrays have a fixed size, once the memory is allocated to them, it cannot be increased or decreased, making it impossible to store extra data if required. An array of fixed size is reffered to as a static array.
+- Allocationg less memory than required to an array leads ti loss of data.
+- An array is homogeneous in nature, so a single array cannot store values of different data types.
+- Arrays store data in contiguous memory locations, which makes deletion and insertion very difficult to implement. This problem is overcome by implementing linked lists, which allow elements to be accessed sequentially.
+
+## Top Theoretical Interview Questions
+|No. |     Question     |   Answer   |
+|----|------------------|------------|
+| 1  | What will happen if you do not initialize an Array? | If the array is not intialized at the time of declaration or any time after that, then it will contain some random values in each memory position. These random values can be of two types: 1. Default values 2. Garbage values |
+| 2 | Why is the complexity of fetching a value from an array be O(1) | As arrays are allocated contiguously in memory, fetching a value via an index of the array is an arithmetic operation. All arithmetic operations are done in constant time i.e. **O(1)**. |
+
+## Top Interview Coding Questions
+### 1. Write a program to reverse the array
+Iterative Way:
+1. Initialize start and end indexes as start = 0, end = n-1
+2. In a loop, swap arr[start] with arr[end] and change start and end as follows:
+    - start = start + 1, end = end - 1
+Recursive Way:
+1. Initialize start and end indexes as start = 0, end = n-1 
+2. Swap arr[start] with arr[end] 
+3. Recursively call reverse for rest of the array.
+
+**Time Complexity**: O(n)
+**Auxiliary Space**: O(n), due to recursive call stack
+
