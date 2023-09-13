@@ -10,6 +10,8 @@ A data structure is not only used for organizing data, but it is also used for p
 - **Linear data structure**: Data structure in which data elements are arranged sequentially or linearly, where each element is attached to its previous and next adjacent elements.
   - _Examples of linear data structures are arrays, stacks, queues, linked lists, etc._
   - **Static data strucutre**: Have a fixed memory size. It is easier to access the elements in a static data structure. _An example of this is an array_.
-  - **Dynamic data structure**:
+  - **Dynamic data structure**: The size is not fixed. It can be randomly updatedduring the runtime which may be considered efficient concerning the memory (space) complexity of the code. _An example of this are queues, stacks, etc._
+- **Non-linear data structure**: Data structure where data elements are not placed sequentially or linearly. We can't traverse all the elements in a run only. _Examples include trees and graphs_.
 
 ![Alt text](https://media.geeksforgeeks.org/wp-content/uploads/20220520182504/ClassificationofDataStructure-660x347.jpg "Diagram")
+
